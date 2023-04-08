@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Students</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="all">
+        <div class="header">
+        <a class="logo" href="index.html">
+            <img src="img/logo.svg" alt="логотип">
+        </a>
+        <ul class="menu">
+            <li class="menu_list"><a class="menu_link" href="index.html"> Главная</a></li>
+            <li class="menu_list"><a class="menu_link menu_link_active" href="students.html"> Студенты</a></li>
+            <li class="menu_list"><a class="menu_link" href="kurs.html"> О курсе</a></li>
+            <li class="menu_list"><a class="menu_link" href="contacts.html"> Контакты</a></li>
+        </ul>
+        <a class="button" href="#">Войти</a>
+    </div>
+    <div class="student">
+        <h2 class="name"> Студенты потока 08.02.2020 &#128103;&#128102;</h2>
+     </div>
+     <div class="student-box">
+        <div class="student-foto"> 
+            <a href="o-sebe.html"> <img width="200" height="270" src="img/student.jpg" alt="студенты"> </a>
+            <a href="o-sebe.html" class="student-name vika">Виктория Козаева</a>
+            
+        </div>
+        <div class="student-foto"> 
+            <img width="200" height="270" src="img/student.jpg" alt="студент">
+            <p class="student-name">Мария Александрова</p>
+            <p class="student-new">НОВИЧОК</p>
+        </div> 
+        <div class="student-foto"> 
+            <img width="200" height="270" src="img/student.jpg" alt="студент">
+            <p class="student-name">Василий Иванов</p>
+        </div>
+        <div class="student-foto"> 
+            <img width="200" height="270" src="img/student.jpg" alt="студент">
+            <p class="student-name">Наргиз Ковалева</p>
+        </div>
+        <div class="student-foto"> 
+            <img width="200" height="270" src="img/student.jpg" alt="студент">
+            <p class="student-name">Александр Кичигин</p>
+        </div>
+     </div>
+</div>
+    
+    <footer class="footer">
+        <p class="footer_info">2023 &copy; <a class="footer_info" href="#">учебный центр</a> </p>
+    </footer>
+    <div class="windows">
+        <div class="window">
+            <h4 class="row">Войти на сайт</h4>
+            <input class="login" type="text" placeholder="Логин">
+            <input class="password" type="text" placeholder="Пароль">
+            <button class="button">Войти</a>
+            </button>
+        </div>
+    </div>
+    <script>
+        const buttonEl = document.querySelector(".button");
+        const windowsEl = document.querySelector('.windows');
+    
+       buttonEl.addEventListener('click', function (e) {
+        windowsEl.classList.toggle('visible')
+        })
+    
+        console.log(buttonEl)
+    </script>
+</body>
+</html>

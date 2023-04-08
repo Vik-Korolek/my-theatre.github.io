@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maket</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="all">
+        <div class="header">
+        <a class="logo" href="index.html">
+            <img src="img/logo.svg" alt="logotype">
+        </a>
+        <ul class="menu">
+            <li class="menu_list"><a class="menu_link menu_link_active" href="index.html"> Главная</a></li>
+            <li class="menu_list"><a class="menu_link" href="students.html"> Студенты</a></li>
+            <li class="menu_list"><a class="menu_link" href="kurs.html"> О курсе</a></li>
+            <li class="menu_list"><a class="menu_link" href="contacts.html"> Контакты</a></li>
+        </ul>
+        <a class="button" href="#">Войти</a>
+        </div>
+    
+    <div class="my_page">
+        <h1 class="viktoria">Меня зовут Виктория и этим всё сказано)</h1>
+        <img class="foto" src="img/vika.jpg" alt="студент">
+       <div class="opisanie">
+        <h3 class="znak"> Знак зодиака - <strong class="lev">ЛЕВ</strong></h3> 
+        <p class="o-sebe"> По профессии - технолог.  Имею два дипломированных образования, плюс никогда не заканчивающийся процесс самообразования и самосовершенствования. Веду активный и почти здоровый образ жизни, люблю спорт <em>(не связанный с экстримом и риском для жизни)</em>. Вредные привычки отсутствуют. Репутация безупречная. Прошлое «прозрачное». На пост президента не баллотировалась. В иностранной разведке не служила. Врагов нет.</p> 
+        <p class="o-sebe">Характер уравновешенный, и гибкий, темперамент представляет собой густой замес «сангвиника» с «флегматиком». Ум пытливый, прозорливый. Выносливость крепкая, реакция быстрая. Личность ответственная, пунктуальная.Взгляды на жизнь реалистичные и прагматичные. Стиль мышления и восприятия всего происходящего – оптимистичный. Люблю жизнь и людей. Чувство юмора всегда со мной. Жизненное кредо: <blockquote class="citata">«Все, что делается, все к лучшему»!</blockquote> </p>
+       </div>
+    </div>
+</div>
+    <footer class="footer ">
+        <p class="footer_info">2023 &copy; <a class="footer_info" href="#">учебный центр</a> </p>
+    </footer>
+<div class="windows">
+    <div class="window">
+        <h4 class="row">Войти на сайт</h4>
+        <input class="login" type="text" placeholder="Логин">
+        <input class="password" type="text" placeholder="Пароль">
+        <button class="button">Войти</a>
+        </button>
+    </div>
+</div>
+<script>
+    const buttonEl = document.querySelector(".button");
+    const windowsEl = document.querySelector('.windows');
+
+   buttonEl.addEventListener('click', function (e) {
+    windowsEl.classList.toggle('visible')
+    })
+
+    console.log(buttonEl)
+</script>
+</body>
+</html>
