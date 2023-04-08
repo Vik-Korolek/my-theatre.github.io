@@ -280,7 +280,8 @@ color: #213B7E;
 .vika {
    text-decoration: none;
 }
-.student-new {
+.student-new::after {
+    content: 'НОВИЧОК';
     position: absolute;
     top: -12px;
     right: -13px;
